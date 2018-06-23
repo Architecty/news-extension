@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "NewsQueue Builder",
+  "description": "Add pages to a NewsQueue, with a url, title, and comments",
+  "version": "1",
+  "author": "Daniel@dabblefox",
+  "browser_action": {
+    "default_icon": "fox-icon.png",
+    "default_title": "NewsQueue",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "fox-icon.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<style type="text/css">
+    body{
+        width: 500px;
+        background-color: beige;
+        padding: 10px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 75px auto;
+        grid-template-rows: auto;
+    }
+    input[type="text"], input[type="password"]{
+        margin: auto auto 5px auto;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    textarea{
+        margin: auto auto 5px auto;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .left{
+        grid-column: 1;
+    }
+    .right{
+        grid-column: 2;
+        justify-self: end;
+        align-self: end;
+    }
+    .comments{
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+
+    .hidden{
+        display:none;
+    }
+</style>
+<body>
+<div id="loginPage">
+    <form name="login">
+        <input id="username" type="text" placeholder="User Name">
+        <input id="password" type="password" placeholder="Password">
+        <input id="loginButton" type="submit" value="Log In">
+    </form>
+</div>
+
+<div id="mainPage" class="popup">
+
+    <div class="container">
+        <label class="left">URL</label>
+        <input class="right textInput" id="url" name="url" type="text">
+
+        <label class="left">Title</label>
+        <input class="  textInput" id="title" type="text">
+    </div>
+
+    <div id='comments' class="comments">
+        <textarea class="comment"></textarea>
+    </div>
+
+    <div class="container">
+        <div>
+            <button id="addComment">Add Comment</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <button id="logoutButton">Logout</button>
+        </div>
+        <div class="right">
+            <button id="addToQueue" class="left">Add to Queue</button>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="script.js">
+</script>
+</html>

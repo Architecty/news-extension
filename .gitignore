@@ -1,0 +1,5 @@
+.idea
+*.crx
+config.js
+*.pem
+*.zip
